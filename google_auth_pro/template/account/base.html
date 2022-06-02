@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-        {% load static %}
-<link rel="stylesheet" href="{% static 'style.css' %}">
-<link rel="stylesheet" href="{% static 'drop.css' %}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-
-    <title>{% block head_title %}{% endblock %}</title>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'style.css' %}">
+      <link rel="stylesheet" href="{% static 'drop.css' %}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+      <title>{% block head_title %}{% endblock %}</title>
   </head>
   <body>
     {% block body %}
-
     <nav>
       <div class="logo">DATA LogIn App
       </div>
@@ -21,7 +19,6 @@
       <ul>
            {% if user.is_authenticated %}
           <li><a id="home" class="" href="{% url 'home' %}">Home</a></li>
-
           <li><a id="signout" class="" href="{% url 'account_logout' %}">Sign Out</a></li>
           <li><a class="" href="">Hello {{ user.first_name }}</a></li>
           {% else %}
@@ -30,12 +27,9 @@
           {% endif %}
       </ul>
     </nav>
-
-   {% block content %}
+    {% block content %}
     {% endblock %}
     {% endblock %}
    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-
   </body>
-
 </html>

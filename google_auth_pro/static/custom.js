@@ -1,7 +1,7 @@
 $(function(){
-	$('#pass1').on('keyup', function () {
-		if (($('#pass1').val() == 'month')||($('#pass1').val() == 'Month')||($('#pass1').val() == 'MONTH')){
-			str=`<div class="list-choice-title">Month</div>
+	$('#pass1').on('keyup', function () {                   //run this function whenever a input value is given
+		if (($('#pass1').val() == 'month')||($('#pass1').val() == 'Month')||($('#pass1').val() == 'MONTH')){     //check if entered  value is equal to any of desired value
+			str=`<div class="list-choice-title">Month</div>   //store a html in str variable
 			<div class="list-choice-objects"><label>
 				<input type="radio" name="month"/><span>January</span>
 			  </label>
@@ -36,10 +36,10 @@ $(function(){
 				<input type="radio" name="month"/><span>December</span>
 			  </label>
 			</div>`
-				 $('#dropdown').html(str);
+				 $('#dropdown').html(str); // if yes insert a html to tag having dropdown as id
 		}
-		else if (($('#pass1').val() == 'week')||($('#pass1').val() == 'Week')||($('#pass1').val() == 'WEEK')){
-			str=`<div class="list-choice-title">Week</div>
+		else if (($('#pass1').val() == 'week')||($('#pass1').val() == 'Week')||($('#pass1').val() == 'WEEK')){   // else if value not matchd with any of given value in condition 2 check in condition 2
+			str=`<div class="list-choice-title">Week</div> //store a html in str variable
 			<div class="list-choice-objects">
 			  <label>
 				<input type="radio" name="month"/><span>Sunday</span>
@@ -63,7 +63,7 @@ $(function(){
 			  <input type="radio" name="month"/><span>Saturday</span>
 			</label>
 			</div>`
-				$('#dropdown').html(str);
+				$('#dropdown').html(str);   // if matched with second insert a html to tag having dropdown as id
 			}
 	});
 });

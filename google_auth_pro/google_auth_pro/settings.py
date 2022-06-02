@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-sycnrigl-i$b@==)%pswdtlw#cz_-6jl2a^6-+*i%93!f=bl_f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -152,8 +152,8 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'home'                 #redirect when login is successfull
 
-ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
+ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'   #redirect to this when login is called
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

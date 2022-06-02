@@ -2,24 +2,25 @@
 
 {% block content %}
 <body>
-
     <div class="container">
-      <div class="wrapper">
-                  <div class="title"><span>Dynamic Dropdown Form</span></div>
-      <form class="login" method="POST" action="{% url 'account_login' %}">
-          <div style="margin-bottom:10px;">
-<h7>Type Week Or Month to active Dynamic Dropdown</h7>
-              </div>
-                    <div class="row">
-<i class="fas fa-arrow-alt-circle-right"></i>
+        <div class="wrapper">
+            <div class="title">
+                <span>Dynamic Dropdown Form</span>
+            </div>
+            <form class="login" method="POST" action="{% url 'account_login' %}">
+                <div style="margin-bottom:10px;">
+                    <h7>Type Week Or Month to active Dynamic Dropdown</h7>
+                </div>
+                <div class="row">
+                    <i class="fas fa-arrow-alt-circle-right"></i>
                         <input type="text" class="form-control" id="pass1" name="passw1" placeholder="Type Week or Month">
-                    </div>
-          <div id="dropdown" class="list-choice">
-
-  </div>
-      </form>
-</div>
+                </div>
+                <div id="dropdown" class="list-choice">
+                </div>
+            </form>
+        </div>
     </div>
+</body>
 
 
 
