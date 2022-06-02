@@ -3,8 +3,10 @@ Steps:-
 2:- go to google_auth_pro directory by <cd google_auth_pro> command
 3:- run python manage.py runserver
 4:- go to http://127.0.0.1:8000/accounts/login/
+ 
+For Administrator go to http://127.0.0.1:8000/admin
 
-
+and login with:-
 
 admin username "anurag"
 admin passoword "2804"
